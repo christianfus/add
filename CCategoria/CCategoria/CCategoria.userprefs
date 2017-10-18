@@ -1,0 +1,18 @@
+﻿<Properties StartupConfiguration="{50717F69-67D8-406C-9B64-341F1A69AC0E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MainWindow.cs">
+    <Files>
+      <File FileName="App.cs" Line="1" Column="1" />
+      <File FileName="CategoriaWindow.cs" Line="22" Column="27" />
+      <File FileName="MainWindow.cs" Line="52" Column="55" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="Properties/DbCommandHelper.cs" Line="12" Column="43" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CCategoria PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
