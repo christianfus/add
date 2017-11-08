@@ -1,7 +1,9 @@
-/home/chrsol/Projects/CCategoria/CCategoria/bin/Debug/CCategoria.exe
-/home/chrsol/Projects/CCategoria/CCategoria/bin/Debug/CCategoria.pdb
-/home/chrsol/Projects/CCategoria/CCategoria/bin/Debug/MySql.Data.dll
 /home/chrsol/Projects/CCategoria/CCategoria/obj/x86/Debug/CCategoria.csprojResolveAssemblyReference.cache
 /home/chrsol/Projects/CCategoria/CCategoria/obj/x86/Debug/CCategoria.csproj.CoreCompileInputs.cache
+/home/chrsol/Projects/CCategoria/CCategoria/bin/Debug/CCategoria.exe
+/home/chrsol/Projects/CCategoria/CCategoria/bin/Debug/CCategoria.pdb
+/home/chrsol/Projects/CCategoria/CCategoria/bin/Debug/CSerpisAd.dll
+/home/chrsol/Projects/CCategoria/CCategoria/bin/Debug/MySql.Data.dll
+/home/chrsol/Projects/CCategoria/CCategoria/bin/Debug/CSerpisAd.pdb
 /home/chrsol/Projects/CCategoria/CCategoria/obj/x86/Debug/CCategoria.exe
 /home/chrsol/Projects/CCategoria/CCategoria/obj/x86/Debug/CCategoria.pdb
