@@ -1,40 +1,54 @@
 ﻿using System;
 using Gtk;
 using System.Data;
-using Serpis.Ad;
-using MySql.Data.MySqlClient;
-using CCategoria;
+using Gtk;
+using System;
+using System.Data;
 
-namespace CCategoria.Properties
+namespace Serpis.Ad
 {
-    public class TreeViewHelper
-    {
-        public static void Fill(TreeView treeView, string selectSql) {
-            IDbCommand dbCommand = App.Instance.Connection.CreateCommand();
-            dbCommand.CommandText = selectSql;
-            IDataReader dataReader = dbCommand.ExecuteReader();
-            int fieldCount = dataReader.FieldCount();
-            ListStore listStore = (ListStore)treeView.Model;
+	public class TreeViewHelper
+	{
+		private static void init(TreeView treeView, IDataReader dataReader)
+		{
+			if (treeView.Model != null)
+				return;
+			int fieldCount = dataReader.FieldCount;
+			Type[] types = new Type[fieldCount];
+			for (int index = 0; index < fieldCount; index++)
+			{
+				treeView.AppendColumn(dataReader.GetName(index),
+					new CellRendererText(), "text", index
+				);
+				types[index] = typeof(string);
+			}
+			ListStore listStore = new ListStore(types);
+			treeView.Model = listStore;
+		}
 
-            if (listStore == null)
-            {
-                Type[] types = new Type[fieldCount];
+		private static void fillListStore(ListStore listStore, IDataReader dataReader)
+		{
+			listStore.Clear();
+			int fieldCount = dataReader.FieldCount;
+			while (dataReader.Read())
+			{
+				string[] values = new string[fieldCount];
+				for (int index = 0; index < fieldCount; index++)
+					values[index] = dataReader[index].ToString();
+				listStore.AppendValues(values);
+			}
+		}
 
-                for (int index = 0; index < fieldCount; index++)
-                {
-                    treeView.AppendColumn(dataReader.GetName(index), new CellRendererText(), "text", index);
-                    types[index] = typeof(string);
-                }
+		public static void Fill(TreeView treeView, string selectSql)
+		{
+			IDbCommand dbCommnand = App.Instance.Connection.CreateCommand();
+			dbCommnand.CommandText = selectSql;
+			IDataReader dataReader = dbCommnand.ExecuteReader();
+			init(treeView, dataReader);
+			ListStore listStore = (ListStore)treeView.Model;
+			fillListStore(listStore, dataReader);
+			dataReader.Close();
+		}
 
-                listStore = new ListStore(types);
-            }
-            while(dataReader.Read()){
-                string[] values = new string[fieldCount];
-                for (int index = 0; index < fieldCount; index++)
-                    values[index] = dataReader[index].ToString();
-                listStore.AppendValues(values);
-            }
-            dataReader.Close();
-        }
-    }
+	}
 }
