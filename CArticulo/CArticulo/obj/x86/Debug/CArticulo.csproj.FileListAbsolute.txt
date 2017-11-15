@@ -1,0 +1,8 @@
+/home/fraleo/Projects/CArticulo/CArticulo/bin/Debug/CArticulo.exe
+/home/fraleo/Projects/CArticulo/CArticulo/bin/Debug/CArticulo.pdb
+/home/fraleo/Projects/CArticulo/CArticulo/bin/Debug/CSerpisAd.dll
+/home/fraleo/Projects/CArticulo/CArticulo/bin/Debug/MySql.Data.dll
+/home/fraleo/Projects/CArticulo/CArticulo/bin/Debug/CSerpisAd.pdb
+/home/fraleo/Projects/CArticulo/CArticulo/obj/x86/Debug/CArticulo.csproj.CoreCompileInputs.cache
+/home/fraleo/Projects/CArticulo/CArticulo/obj/x86/Debug/CArticulo.exe
+/home/fraleo/Projects/CArticulo/CArticulo/obj/x86/Debug/CArticulo.pdb

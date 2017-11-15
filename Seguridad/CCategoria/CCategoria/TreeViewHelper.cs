@@ -1,6 +1,4 @@
-﻿using System;
-using Gtk;
-using System.Data;
+﻿using Gtk;
 using Gtk;
 using System;
 using System.Data;
@@ -49,6 +47,5 @@ namespace Serpis.Ad
 			fillListStore(listStore, dataReader);
 			dataReader.Close();
 		}
-
 	}
 }

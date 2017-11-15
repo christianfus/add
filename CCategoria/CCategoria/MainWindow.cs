@@ -18,14 +18,7 @@ public partial class MainWindow : Gtk.Window
         App.Instance.Connection = new MySqlConnection("server=localhost;database=dbprueba;user=root;password=sistemas");
         App.Instance.Connection.Open();
 
-        treeView.AppendColumn("id", new CellRendererText(), "text", 0);
-        treeView.AppendColumn("nombre", new CellRendererText(), "text", 1);
-
-
-        ListStore listStore = new ListStore(typeof(string), typeof(string));
-        treeView.Model = listStore;
-
-        fillListStore(listStore);
+        TreeViewHelper.Fill(treeView, CategoriaDao.SelectAll);
 
         treeView.Selection.Changed += delegate {
             bool hasSelected = treeView.Selection.CountSelectedRows() > 0;
@@ -43,40 +36,24 @@ public partial class MainWindow : Gtk.Window
         };
 
         editAction.Activated += delegate {
-			object id = getId();
+            object id = TreeViewHelper.GetId(treeView);
             Categoria categoria = CategoriaDao.Load(id);
             new CategoriaWindow(categoria);
 		};
 
         refreshAction.Activated += delegate {
-            fillListStore(listStore);
+			TreeViewHelper.Fill(treeView, CategoriaDao.SelectAll);
 		};
 
         deleteAction.Activated += delegate {
             if (WindowHelper.Confirm(this, "¿Quieres eliminar el registro?")) {
-                object id = getId();
-                CategoriaDao.Delete(id);
+				object id = TreeViewHelper.GetId(treeView);
+				CategoriaDao.Delete(id);
 			}
             
 
         };
     }
-
-    private object getId() {
-		TreeIter treeIter;
-		treeView.Selection.GetSelected(out treeIter);
-        return treeView.Model.GetValue(treeIter, 0);
-	}
-
-    private void fillListStore(ListStore listStore) {
-		listStore.Clear();
-        IDbCommand dbCommnand = App.Instance.Connection.CreateCommand();
-		dbCommnand.CommandText = "select * from categoria order by id";
-        IDataReader dataReader = dbCommnand.ExecuteReader();
-		while (dataReader.Read())
-			listStore.AppendValues(dataReader["id"].ToString(), dataReader["nombre"]);
-		dataReader.Close();
-	}
 
     protected void OnDeleteEvent(object sender, DeleteEventArgs a)
     {

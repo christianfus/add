@@ -1,0 +1,6 @@
+/home/fraleo/Projects/CSerpisAd/CSerpisAd/bin/Debug/CSerpisAd.dll
+/home/fraleo/Projects/CSerpisAd/CSerpisAd/bin/Debug/CSerpisAd.pdb
+/home/fraleo/Projects/CSerpisAd/CSerpisAd/obj/Debug/CSerpisAd.csprojResolveAssemblyReference.cache
+/home/fraleo/Projects/CSerpisAd/CSerpisAd/obj/Debug/CSerpisAd.csproj.CoreCompileInputs.cache
+/home/fraleo/Projects/CSerpisAd/CSerpisAd/obj/Debug/CSerpisAd.dll
+/home/fraleo/Projects/CSerpisAd/CSerpisAd/obj/Debug/CSerpisAd.pdb

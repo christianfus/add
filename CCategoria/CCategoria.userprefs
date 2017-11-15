@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{50717F69-67D8-406C-9B64-341F1A69AC0E}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../CArticulo/CArticulo/MainWindow.cs">
+    <Files>
+      <File FileName="CCategoria/CategoriaDao.cs" Line="41" Column="7" />
+      <File FileName="../CArticulo/CArticulo/Articulo.cs" Line="1" Column="1" />
+      <File FileName="../CArticulo/CArticulo/ArticuloDao.cs" Line="69" Column="10" />
+      <File FileName="../CArticulo/CArticulo/ArticuloWindow.cs" Line="23" Column="13" />
+      <File FileName="../CArticulo/CArticulo/MainWindow.cs" Line="38" Column="39" />
+      <File FileName="CCategoria/MainWindow.cs" Line="48" Column="9" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CCategoria PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
