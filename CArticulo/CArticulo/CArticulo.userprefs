@@ -1,3 +1,16 @@
 ﻿<Properties StartupConfiguration="{9886B75F-774C-44E8-8E8E-5C159F150554}|Default">
+  <MonoDevelop.Ide.ItemProperties.CArticulo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../CComboBox/CComboBox/MainWindow.cs">
+    <Files>
+      <File FileName="../../CComboBox/CComboBox/Program.cs" Line="1" Column="1" />
+      <File FileName="../../CComboBox/CComboBox/ComboBoxHelper.cs" Line="26" Column="48" />
+      <File FileName="../../CComboBox/CComboBox/MainWindow.cs" Line="24" Column="37" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>

@@ -1,0 +1,9 @@
+/home/chrsol/Projects/CComboBox/CComboBox/bin/Debug/CComboBox.exe
+/home/chrsol/Projects/CComboBox/CComboBox/bin/Debug/CComboBox.pdb
+/home/chrsol/Projects/CComboBox/CComboBox/obj/x86/Debug/CComboBox.csprojResolveAssemblyReference.cache
+/home/chrsol/Projects/CComboBox/CComboBox/obj/x86/Debug/CComboBox.csproj.CoreCompileInputs.cache
+/home/chrsol/Projects/CComboBox/CComboBox/obj/x86/Debug/CComboBox.exe
+/home/chrsol/Projects/CComboBox/CComboBox/obj/x86/Debug/CComboBox.pdb
+/home/chrsol/Projects/CComboBox/CComboBox/bin/Debug/CSerpisAd.dll
+/home/chrsol/Projects/CComboBox/CComboBox/bin/Debug/MySql.Data.dll
+/home/chrsol/Projects/CComboBox/CComboBox/bin/Debug/CSerpisAd.pdb
