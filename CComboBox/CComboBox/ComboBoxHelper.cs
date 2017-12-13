@@ -24,8 +24,14 @@ namespace Serpis.Ad
                 TreeIter treeIter = listStore.AppendValues(dataReader[0].ToString(), dataReader[1].ToString());
                 if (id.Equals(dataReader[0]))
                     initialTreeIter = treeIter;
-
             }
+            comboBox.SetActiveIter(initialTreeIter);
+        }
+
+        private static void init(ComboBox comboBox){
+            CellRendererText cellRendererText = new CellRendererText();
+            comboBox.PackStart(cellRendererText, false);
+            comboBox
         }
     }
 }
